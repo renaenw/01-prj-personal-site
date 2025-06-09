@@ -1,1 +1,149 @@
 /* Add you CSS here */
+
+/* Set the background image for the whole page */
+body {
+  background-color: #ffb6d5; /* fallback color if image doesn't load */
+  background-image: url('img/background1.png'); /* use the new background image */
+  background-size: cover; /* make the image cover the whole page */
+  background-repeat: no-repeat; /* don't repeat the image */
+  background-position: center; /* center the image */
+  text-align: center; /* center all text */
+}
+
+/* Style each section with a box and border */
+section {
+  border: 2px solid #e75480; /* darker pink border */
+  background-color: #fcb3c9; /* lighter pink inside the box */
+  padding: 32px; /* more space inside the box */
+  margin: 20px; /* space outside the box */
+  width: 350px; /* make each box wider */
+  max-width: none; /* remove max-width limit */
+  border-radius: 8px; /* rounded corners */
+  /* Center the section itself */
+  text-align: center; /* center text inside each section */
+  display: inline-block; /* show boxes side by side */
+  vertical-align: top; /* align boxes to the top */
+}
+
+/* Container to place boxes side by side */
+.box-row {
+  text-align: center; /* center the row in the page */
+  width: 100%;
+}
+
+/* Make sure the boxes inside .box-row are side by side */
+.box-row section {
+  display: inline-block; /* show boxes side by side */
+  vertical-align: top;   /* align tops */
+  margin: 20px;          /* keep space between boxes */
+}
+
+/* Remove individual #bio and #school-info margin and display styles */
+#bio,
+#school-info {
+  margin: 0;        /* remove extra margin, handled by .box-row section */
+  display: inline-block; /* ensure inline-block for both boxes */
+}
+
+/* Center the list items in the Skills section */
+section ul {
+  display: inline-block; /* make the list fit its content */
+  text-align: left; /* keep list items aligned to the left */
+  margin: 0 auto; /* center the list */
+  padding-left: 20px; /* add some space before list items */
+}
+
+/* Remove bullet points and extra spacing for the skills list */
+.skills-list {
+  font-size: 1.1em; /* slightly larger text for skills */
+  line-height: 2;   /* more space between lines */
+  text-align: center; /* center the skills text */
+  margin-top: 12px;
+}
+
+/* Make the main heading (your name) larger and change color for dark background */
+h1 {
+  font-size: 3em; /* makes your name bigger */
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: #ffe4ec; /* light pink that stands out on dark/black background */
+}
+
+/* Make the Skills section heading larger */
+#skills h2 {
+  font-size: 2em; /* makes the word "Skills" bigger */
+  margin-bottom: 12px;
+}
+
+/* Make the Resume section heading the same size as Skills */
+#resume h2 {
+  font-size: 2em; /* makes the word "Resume" the same size as Skills */
+  margin-bottom: 12px;
+}
+
+/* Style for the profile photo at the top */
+.profile-photo {
+  width: 350px; /* make the photo larger */
+  height: auto; /* keep the original aspect ratio */
+  object-fit: contain; /* show the full image */
+  border-radius: 0; /* no rounded corners */
+  border: none;     /* no border */
+  margin-top: 32px; /* space at the top */
+  margin-bottom: 16px; /* space below the photo */
+  display: block; /* make sure the image is on its own line */
+  margin-left: auto; /* center the image horizontally */
+  margin-right: auto;
+}
+
+/* Add style for the bio box to match other sections */
+#bio {
+  border: 2px solid #e75480; /* darker pink border */
+  background-color: #fcb3c9; /* lighter pink inside the box */
+  padding: 32px;
+  width: 500px; /* make the bio box wider to show full bio */
+  max-width: none;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Simple navigation bar styles */
+nav {
+  background-color: #e75480; /* darker pink for the navbar */
+  padding: 16px 0; /* space above and below the links */
+  margin-bottom: 24px; /* space below the navbar */
+}
+
+nav a {
+  color: #fff; /* white text for links */
+  text-decoration: none; /* remove underline */
+  font-size: 1.2em; /* make links a bit bigger */
+  margin: 0 20px; /* space between links */
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline; /* underline on hover */
+}
+
+/* Style for the School Info box to match other sections */
+#school-info {
+  border: 2px solid #e75480; /* darker pink border */
+  background-color: #fcb3c9; /* lighter pink inside the box */
+  padding: 32px;
+  width: 350px;
+  max-width: none;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Style for the School Info label */
+.school-label {
+  font-size: 2em; /* same size as other section headings */
+  margin-bottom: 12px;
+}
+
+/* Style for the School Info text */
+.school-text {
+  font-size: 1em; /* normal font size */
+  margin-bottom: 24px;
+}
